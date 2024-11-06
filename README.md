@@ -31,6 +31,9 @@ is not just a mere reduction of dimensions; it’s an insightful distillation of
 - From PCA Space to Original Space: Interpreting the cluster centers.
 - Centroids and Means: Comparing cluster centers with the original data mean.
 - Deep Dive into Loadings: A closer look at the features influencing each principal component.
+## Hierarchical clustering
+Hierarchical clustering, also known as hierarchical cluster analysis, is an algorithm that groups similar objects into 
+groups called clusters.
 
 ## Resources
 ![The Ultimate Step-by-Step Guide to Data Mining with PCA and KMeans](https://drlee.io/the-ultimate-step-by-step-guide-to-data-mining-with-pca-and-kmeans-83a2bcfdba7d)
