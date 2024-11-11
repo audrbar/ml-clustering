@@ -34,6 +34,10 @@ is not just a mere reduction of dimensions; it’s an insightful distillation of
 ## Hierarchical clustering
 Hierarchical clustering, also known as hierarchical cluster analysis, is an algorithm that groups similar objects into 
 groups called clusters.
-
+## DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+Creates cluster for noise. Density is key.
+## Silhouette Score
+The overall silhouette score is the average silhouette score for all points in the dataset. It provides a single 
+measure of the overall clustering quality.
 ## Resources
 ![The Ultimate Step-by-Step Guide to Data Mining with PCA and KMeans](https://drlee.io/the-ultimate-step-by-step-guide-to-data-mining-with-pca-and-kmeans-83a2bcfdba7d)
