@@ -39,5 +39,18 @@ Creates cluster for noise. Density is key.
 ## Silhouette Score
 The overall silhouette score is the average silhouette score for all points in the dataset. It provides a single 
 measure of the overall clustering quality.
+## Davies-Bouldin score
+The score is defined as the average similarity measure of each cluster with its most similar cluster, where similarity 
+is the ratio of within-cluster distances to between-cluster distances. Thus, clusters which are farther apart and less 
+dispersed will result in a better score.
+## Dunn index
+The Dunn index (DI) (introduced by J. C. Dunn in 1974), a metric for evaluating clustering algorithms, is an internal 
+evaluation scheme, where the result is based on the clustered data itself. Like all other such indices, the aim of this 
+Dunn index to identify sets of clusters that are compact, with a small variance between members of the cluster, and 
+well separated, where the means of different clusters are sufficiently far apart, as compared to the within cluster 
+variance. 
+Higher the Dunn index value, better is the clustering. The number of clusters that maximizes Dunn index is taken as the 
+optimal number of clusters k. It also has some drawbacks. As the number of clusters and dimensionality of the data 
+increase, the computational cost also increases. 
 ## Resources
 ![The Ultimate Step-by-Step Guide to Data Mining with PCA and KMeans](https://drlee.io/the-ultimate-step-by-step-guide-to-data-mining-with-pca-and-kmeans-83a2bcfdba7d)

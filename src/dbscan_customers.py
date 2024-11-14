@@ -1,8 +1,5 @@
-from sklearn.datasets import make_moons, make_blobs
 from sklearn.cluster import DBSCAN, KMeans
-from scipy.cluster.hierarchy import dendrogram, linkage
-from sklearn.decomposition import PCA
-from sklearn.metrics import pairwise_distances_argmin_min, accuracy_score, adjusted_rand_score, silhouette_score
+from sklearn.metrics import silhouette_score
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -46,23 +43,18 @@ print(f"Spending Score: {df['Spending Score (1-100)'].unique()}")
 
 # grade_mapping = { 1: 'A', 2: 'B', 3: 'C' }
 # df['letter_grade'] = df['grade'].map(grade_mapping)
-
 # df['status'] = df['status'].replace({'fail': 'F', 'pass': 'P'})
-
-# Generate data
-spending_data = df[['Spending Score (1-100)', 'Annual Income (k$)']]
-income_data = df[['Gender', 'Age', 'Spending Score (1-100)']]
-print(f"Spending data: {spending_data.columns}")
-print(f"Income data: {income_data.columns}")
-
-# Choose right source
-initial_data = spending_data
-
 # Reduce to 2 dimensions for visualization
 # pca = PCA(n_components=2)
 # data = pca.fit_transform(initial_data)
-print(initial_data[['Spending Score (1-100)']])
-data = initial_data
+
+# Generate data
+all_data = df[['Gender', 'Age', 'Spending Score (1-100)', 'Annual Income (k$)']]
+some_data = df[['Spending Score (1-100)', 'Annual Income (k$)']]
+print(f"Spending data: {all_data.columns}")
+print(f"Income data: {some_data.columns}")
+
+data = some_data
 
 # Define parameter ranges
 dbscan_eps_values = [0.2, 0.3, 0.4, 0.5]
